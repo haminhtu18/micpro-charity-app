@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,17 +11,31 @@
   box-sizing: border-box;
 }
 
+.font-sora {
+  font-family: Sora;
+}
+.font-network {
+  background: linear-gradient(91deg, #f961d8 49.23%, #1663f9 73.55%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 body {
-  font-family: Inter;
+  font-family: Poppins;
 }
 
 @layer utilities {
   .btn_white {
-    @apply border-white bg-white px-8 py-3 text-green-50;
+    @apply border-transparent bg-white px-[50px] py-[18px] text-gray-90;
   }
   .btn_white_text {
-    @apply border-white bg-white px-8 py-3 text-gray-90;
+    @apply border-transparent bg-white px-8 py-3 text-gray-90;
   }
+  .btn_blue {
+    @apply border-transparent bg-[#1663F9] px-[50px] py-[18px] text-white;
+  }
+
   .btn_green {
     @apply border-green-50 bg-green-50 px-8 py-5 text-white;
   }
@@ -81,7 +96,7 @@ body {
   }
 
   .regular-16 {
-    @apply text-[16px] font-[400];
+    @apply text-[16px] font-[500];
   }
 
   .regular-14 {
@@ -96,24 +111,24 @@ body {
     @apply text-[88px] font-[700] leading-[120%];
   }
 
-  .bold-64 {
-    @apply text-[64px] font-[700] leading-[120%];
+  .bold-60 {
+    @apply text-[60px] font-[700] leading-[120%];
   }
 
-  .bold-52 {
-    @apply text-[52px] font-[700] leading-[120%];
+  .bold-50 {
+    @apply text-[50px] font-[700] leading-[120%];
   }
 
   .bold-40 {
     @apply text-[40px] font-[700] leading-[120%];
   }
 
-  .bold-32 {
-    @apply text-[32px] font-[700] leading-[120%];
+  .bold-34 {
+    @apply text-[34px] font-[700] leading-[120%];
   }
 
   .bold-20 {
-    @apply text-[20px] font-[700];
+    @apply text-[20px] font-[600];
   }
 
   .bold-18 {
