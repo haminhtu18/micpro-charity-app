@@ -34,3 +34,42 @@ export const HELP_LINKS = [
     logo: "/health&insurance.svg",
   },
 ];
+
+export const TOP_DONORS = [
+  {
+    key: "1",
+    title: "Micle James",
+    price: "$1,225.00",
+    face_img: "/micle-james-1.png",
+  },
+  {
+    key: "2",
+    title: "Micle James",
+    price: "$1,225.00",
+    face_img: "/micle-james-2.png",
+  },
+  {
+    key: "3",
+    title: "Micle James",
+    price: "$1,225.00",
+    face_img: "/micle-james-3.png",
+  },
+  {
+    key: "4",
+    title: "Micle James",
+    price: "$1,225.00",
+    face_img: "/micle-james-4.png",
+  },
+  {
+    key: "5",
+    title: "Micle James",
+    price: "$1,225.00",
+    face_img: "/micle-james-5.png",
+  },
+  {
+    key: "6",
+    title: "Micle James",
+    price: "$1,225.00",
+    face_img: "/micle-james-6.png",
+  },
+];

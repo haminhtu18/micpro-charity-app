@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="max-container flexBetween w-full py-5 lg:py-12 padding-container">
+    <nav className="py-5 flexBetween max-container padding-container">
       <Link href="/" className="flex justify-center items-center gap-2.5">
         <Image src="/logo.svg" alt="logo" width={36} height={36} />
         <h3 className="bold-20 font-sora">MicPro</h3>
@@ -57,18 +57,17 @@ const Navbar = () => {
           />
         </Link>
       </ul>
-      <div className="hidden xl:flexCenter z-20">
+      <div className="hidden lg:flexCenter z-20">
         <Button title="Donate Now" type="Button" variant="btn_blue" />
       </div>
-      <div>
-        <Image
-          src="/menu.svg"
-          alt="menu"
-          width={32}
-          height={32}
-          className="lg:hidden z-20 inline-block"
-        />
-      </div>
+
+      <Image
+        src="/menu.svg"
+        alt="menu"
+        width={32}
+        height={32}
+        className="lg:hidden z-20 inline-block"
+      />
     </nav>
   );
 };
