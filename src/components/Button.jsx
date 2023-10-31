@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-const Button = ({ type, title, variant, iconRight, iconLeft, full }) => {
+const Button = ({ type, title, variant, iconRight, iconLeft, full, round }) => {
   return (
     <button
-      className={`flexCenter gap-3 ${variant} rounded-full border ${
-        full && "w-full"
-      } `}
+      className={`flexCenter gap-2.5 ${variant}  ${
+        round ? `rounded-[${round}]` : "rounded-full"
+      } border ${full && "w-full"} `}
       type={type}
     >
       {iconLeft && <Image src={iconLeft} alt={title} width={24} height={24} />}
